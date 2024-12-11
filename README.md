@@ -1,0 +1,1 @@
+# keycloak-admin-events-logger
