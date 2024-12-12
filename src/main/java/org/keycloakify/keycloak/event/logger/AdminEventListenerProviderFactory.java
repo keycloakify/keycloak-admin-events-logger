@@ -8,7 +8,7 @@ import org.keycloak.models.KeycloakSessionFactory;
 
 public class AdminEventListenerProviderFactory implements EventListenerProviderFactory {
 
-    public static final String ID = "keycloak-admin-events-logger";
+    public static final String ID = "keycloakify-logging";
 
     @Override
     public AdminEventListenerProvider create(KeycloakSession session) {

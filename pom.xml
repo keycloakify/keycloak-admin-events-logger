@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.keycloakify.keycloak</groupId>
-    <artifactId>keycloak-admin-events-logger</artifactId>
+    <artifactId>keycloakify-logging</artifactId>
     <version>0.0.6</version>
     <packaging>jar</packaging>
 

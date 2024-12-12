@@ -1,4 +1,4 @@
-# keycloak-admin-events-logger
+# keycloakify-logging
 
 ```bash
 mvn clean install
