@@ -3,12 +3,16 @@ package org.keycloakify.keycloak.event.logger;
 import org.keycloak.events.Event;
 import org.keycloak.events.EventListenerProvider;
 import org.keycloak.events.admin.AdminEvent;
-import java.util.Map;
 
 public class AdminEventListenerProvider implements EventListenerProvider {
 
     @Override
     public void onEvent(Event event) {
+
+        System.out.println("!!!!!!! onEvent(Event event)");
+        System.out.println(event.toString());
+
+        /* 
         StringBuilder sb = new StringBuilder();
 
         sb.append("!!!!!!!!!!!!!!!!!!!!!!!!!! type=");
@@ -43,12 +47,17 @@ public class AdminEventListenerProvider implements EventListenerProvider {
         }
 
         System.out.println(sb.toString());
-
+        */
     }
 
     @Override
     public void onEvent(AdminEvent adminEvent, boolean includeRepresentation) {
 
+        System.out.println("!!!!!!! onEvent(AdminEvent adminEvent, boolean includeRepresentation)");
+        System.out.println(adminEvent.toString());
+
+
+        /* 
         StringBuilder sb = new StringBuilder();
 
         sb.append("!!!!!!!!!!!!!!!!!! operationType=");
@@ -83,6 +92,7 @@ public class AdminEventListenerProvider implements EventListenerProvider {
         }
 
         System.out.println(sb.toString());
+        */
 
     }
 
