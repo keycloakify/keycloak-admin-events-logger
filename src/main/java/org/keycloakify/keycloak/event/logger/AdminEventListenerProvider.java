@@ -12,19 +12,20 @@ public class AdminEventListenerProvider implements EventListenerProvider {
     @Override
     public void onEvent(AdminEvent adminEvent, boolean includeRepresentation) {
 
-        String realm = null;
+        String realmName = null;
 
         try{
-            realm = adminEvent.getAuthDetails().getRealmId();
+            realmName = adminEvent.getAuthDetails().getRealmName();
+
         }catch(Exception e){
-            realm = "unknown";
+            realmName = "cannot_tell_on_older_keycloak_version";
         }
 
-        if( realm.equals("master") ){
+        if( realmName.equals("master") ){
             return;
         }
 
-        System.out.println("keycloakify-logging: REALM_CONFIG_CHANGED - realm id: " + realm);
+        System.out.println("keycloakify-logging: REALM_CONFIG_CHANGED - realmName=" + realmName);
 
     }
 
