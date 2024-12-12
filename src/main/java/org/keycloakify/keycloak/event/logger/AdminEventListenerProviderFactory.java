@@ -17,17 +17,14 @@ public class AdminEventListenerProviderFactory implements EventListenerProviderF
 
     @Override
     public void init(Config.Scope config) {
-        System.out.println("! ===============> AdminEventListenerProviderFactory.init()");
     }
 
     @Override
     public void postInit(KeycloakSessionFactory factory) {
-        System.out.println("! ===============> AdminEventListenerProviderFactory.postInit()");
     }
 
     @Override
     public void close() {
-        System.out.println("! ===============> AdminEventListenerProviderFactory.close()");
     }
 
     @Override
