@@ -42,11 +42,17 @@ public class AdminEventListenerProvider implements EventListenerProvider {
 
     @Override
     public void onEvent(Event event) {
+
+        System.out.println("========================> onEvent(Event event)");
+
         tx.addEvent(event);
     }
 
     @Override
     public void onEvent(AdminEvent adminEvent, boolean includeRepresentation) {
+
+        System.out.println("========================> onEvent(AdminEvent adminEvent, boolean includeRepresentation)");
+
         tx.addAdminEvent(adminEvent, includeRepresentation);
     }
 
